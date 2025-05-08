@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV – Karlo</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("contact-form");
+    const messageBox = document.getElementById("form-message");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault(); // Blokiraj stvarno slanje
+      messageBox.style.display = "block"; // Prikaži poruku
+    });
+  });
+</script>
+
+
+<body>
+  <header class="hero">
+    <div class="container hero-content">
+      <div>
+        <h1>Karlo Čabraja</h1>
+        <p class="role" style="color: #f5f5f5;">Tehničar za računalstvo • Student Grafičkog fakulteta</p>
+        <div class="contact">
+          <a href="mailto:chaby006@email.com">chaby006@email.com</a> <br> <span style="color:#f5f5f5;">+385 98 941 1222</span>
+        </div>
+      </div>
+      <img src="./ja2.jpg" alt="Profilna slika" class="profile-pic" />
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>O meni</h2>
+      <p>Studiram na Grafičkom fakultetu s fokusom na web dizajn i izradu web stranica. 
+        Spoj tehničkog znanja i osjećaja za dizajn ono je što me izdvaja, a dokaz toga je i moj vlastiti, samostalno izrađen životopis. 
+        Volim raditi na vizualno i funkcionalno kvalitetnim rješenjima.</p>
+    </section>
+
+    <section>
+      <h2>Iskustvo</h2>
+      <div class="card">
+        <h3>Web stranica - Iznajmljivanje</h3>
+        <span>2024 - 2025</span>
+        <p>Samostalno sam napravio web stranicu za iznajmljivanje, koristeći Figmu i WebFlow.</p>
+      </div>
+      <div class="card">
+        <h3>Fina GS - obrada novca</h3>
+        <span>1.8.2023. - 7.9.2023. / 30.7.2024. - 5.9.2024.</span>
+        <p>Obrada gotovg novca.</p>
+      </div>
+      <div class="card">
+        <h3>Umag Open Festival - Konobar</h3>
+        <span>21.7.2023. - 30.7.2023. / 19.7.2024. - 27.7.2024. </span>
+        <p>Studentski posao preko ljeta.</p>
+      </div>
+      <div class="card">
+        <h3>Arena Zagreb koncerti - Konobar</h3>
+        <span>15.5.2024. / 7.6.2024. / 1.7.2024. / 3.12.2024.</span>
+        <p>Studentski posao povremeno vikendima.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Obrazovanje</h2>
+      <div class="card">
+        <h3>Srednja škola Ban Josip Jelačić</h3>
+        <span>2019 – 2023</span>
+        <p>Tehničar za računalstvo</p>
+      </div>
+
+      <div class="card">
+        <h3>Grafički fakultet – Sveučilište u Zagrebu</h3>
+        <span>2023 – ....</span>
+        <p>Preddiplomski studij grafičke tehnologije, Tehničko-tehnološkog smjera.</p>
+      </div>
+    </section>
+
+    <section class="skills-grid">
+      <div>
+        <h2>Vještine</h2>
+        <ul>
+          <li>HTML / CSS / JavaScript</li>
+          <li>Photoshop / InDesign / Blender</li>
+          <li>Figma / Canva</li>
+          <li>FontForge / Osnove programiranja</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Jezici</h2>
+        <ul>
+          <li>Hrvatski – materinji</li>
+          <li>Engleski – 12 godina (Osnovna i srednja škola)</li>
+          <li>Njemački – 4 godine (Osnovna škola)</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Kontakt forma</h2>
+      <form class="contact-form" id="contact-form">
+        <input type="text" name="name" placeholder="Ime i prezime" required />
+        <input type="email" name="email" placeholder="Email adresa" required />
+        <textarea name="message" placeholder="Poruka" rows="5" required></textarea>
+        <button type="submit">Pošalji</button>
+      </form>
+      <div id="form-message" style="display:none; margin-top:15px; font-weight:bold; color:#c0392b;">
+        Opcija trenutno nije dostupna. Javite se putem maila. Hvala!
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 Karlo. Izrađeno u Studio Visual Code-u.</p>
+    </div>
+  </footer>
+</body>
+</html>
